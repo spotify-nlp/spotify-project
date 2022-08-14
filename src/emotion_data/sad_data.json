@@ -1,0 +1,20 @@
+{
+    "target_danceability": 0.5562621776504298, 
+    "min_danceability": 0.166, 
+    "max_danceability": 0.95, 
+    "target_energy": 0.41496747851002863, 
+    "min_energy": 0.0167, 
+    "max_energy": 0.964, 
+    "target_loudness": -9.408378900445765, 
+    "min_loudness": -19.495, 
+    "max_loudness": -1.653, 
+    "target_valence": 0.30490174418604654, 
+    "min_valence": 0.0317, 
+    "max_valence": 0.774, 
+    "target_speechiness": 0.04451059602649007, 
+    "min_speechiness": 0.0242, 
+    "max_speechiness": 0.0994, 
+    "target_tempo": 115.69591535150646, 
+    "min_tempo": 61.95, 
+    "max_tempo": 189.857
+}
