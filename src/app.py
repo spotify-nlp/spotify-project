@@ -4,6 +4,7 @@ from flask import Flask, request, url_for, session, redirect
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import time
+import json
 
 app = Flask(__name__)
 
@@ -56,3 +57,19 @@ def authorizeUser():
         redirect_uri=url_for('redirectPage', _external=True),
         scope="user-library-read, playlist-read-collaborative, app-remote-control, user-read-playback-state, user-read-email, user-top-read, user-follow-read, user-read-currently-playing, playlist-read-private"
     )
+
+
+# get_emotion_data: String (user input) -> dict
+def get_emotion_data(text):
+    # Get emotion from ML model (incomplete, waiting on function)
+    emotion = "" # placeholder for predict_emotion(text)
+    
+    # Open JSON file
+    f = open(emotion + '_data.json')
+    
+    # Dictionary representing JSON object
+    data = json.load(f)
+
+    f.close()
+
+    return data
